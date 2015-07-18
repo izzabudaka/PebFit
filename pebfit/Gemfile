@@ -7,6 +7,9 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'coffee-script-source', '1.8.0'
 # ADDING THE GEM WHICH MAKES THE JAVASCRIPT WORK
 
+gem 'devise'
+
+gem 'shareable'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
