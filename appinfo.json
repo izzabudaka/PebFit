@@ -1,0 +1,19 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "izz.abudaka@gmail.com",
+    "longName": "PebFit",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "PebFit",
+    "uuid": "25b37956-d325-4450-a152-82cf4824f343",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
