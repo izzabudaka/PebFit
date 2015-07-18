@@ -2,10 +2,14 @@ class WorkoutsController < ApplicationController
 
   def view
   	@workouts = Workout.all
+
+
   end
 
   def show
   	@workout = Workout.find(params[:id])
+  	@activity = Activity.find(params[:id])
+  	@activities = Activity.all
   end
 
   def new
@@ -36,5 +40,8 @@ class WorkoutsController < ApplicationController
 
   def workout_params
     params.require(:workout).permit(:name)
+  end
+  def activity_params
+    params.require(:activity).permit(:activity, :lengthInSeconds)
   end
 end

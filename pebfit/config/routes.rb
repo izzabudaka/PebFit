@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get 'about' => 'home#about'
   get 'contact' => 'home#contact'
   get 'workouts' => 'workouts#view'
+  
+  
+
    resources :workouts, only: [:view, :show, :new, :create, :delete] 
   get 'calendars' => 'calendars#view'
   # Example of regular route:

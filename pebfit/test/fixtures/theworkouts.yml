@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  totaltime: MyString
+  lastattempt: 2015-07-18
+
+two:
+  name: MyString
+  totaltime: MyString
+  lastattempt: 2015-07-18
