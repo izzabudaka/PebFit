@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def after_sign_in_path_for(resource)
-    # TODO: redirect user to work-outs
+    workouts_path # if you leave this blank is going to generate an error upon login
   end
 
 end
