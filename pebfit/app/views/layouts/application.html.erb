@@ -9,16 +9,20 @@
 <body>
 
 <%= render 'layouts/header' %>
-<div class="container">
-<% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
 
-<%= yield %>
+<div class="row">
+	<div class="col-md-offset-3 col-md-6">
+		<div class="container"col>
+			<% if notice %>
+			<p class="alert alert-success"><%= notice %></p>
+			<% end %>
+			<% if alert %>
+			<p class="alert alert-danger"><%= alert %></p>
+			<% end %>
 
+			<%= yield %>
+		</div>
+	</div>
 </div>
 </body>
 
