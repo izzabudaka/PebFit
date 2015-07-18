@@ -7,5 +7,4 @@ class ApplicationController < ActionController::Base
     # TODO: redirect user to work-outs
   end
 
-
 end
