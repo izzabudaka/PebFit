@@ -1,0 +1,27 @@
+ <h2 class='page-header'>New Workout</h2>
+
+    <%= form_for @workout, url: { action: "create" } do |f| %>
+
+      <% if @workout.errors.any? %>
+        <div class="panel panel-danger">
+          <div class="panel-heading">
+            Something went wrong <strong>(ノಠ益ಠ)ノ彡┻━┻</strong>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <% @workout.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      <% end %>
+
+      <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+
+      </div>
+      <%= f.submit "Create", class: "btn btn-primary" %>
+    <% end %>

@@ -1,3 +1,22 @@
 <h1>
   View for the workouts controller
 </h1>
+
+
+    <h2 class='page-header'>Current Projects</h2>
+    <table class='table'>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Total Time</th>
+          <th>Last attempted</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @workouts.each do |p| %>
+          <%= render "workout_row", workout: p %>
+        <% end %>
+      </tbody>
+
+    </table>
+        <%= link_to "New Training regime", new_workout_path, class: "btn btn-primary" %>

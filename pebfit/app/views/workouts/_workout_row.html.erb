@@ -1,0 +1,8 @@
+<tr>
+  <td><%= workout.name %></td>
+
+  <td><%= workout.totaltime %></td>
+  <td><%= workout.lastattempt %></td>
+
+  <td><%= link_to "Show", workout_path(workout) %> | <%= link_to "Delete", workouts_path, method: :delete %></td>
+</tr>
